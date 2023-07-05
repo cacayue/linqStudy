@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqBooks", "LinqBooks\Linq
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomLINQ", "CustomLINQ\CustomLINQ.csproj", "{677BCE68-8943-4ED5-98C1-ED69CC934946}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensibility", "Extensibility\Extensibility.csproj", "{780B999A-9E94-41E9-9B11-665422214CCE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{677BCE68-8943-4ED5-98C1-ED69CC934946}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{677BCE68-8943-4ED5-98C1-ED69CC934946}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{677BCE68-8943-4ED5-98C1-ED69CC934946}.Release|Any CPU.Build.0 = Release|Any CPU
+		{780B999A-9E94-41E9-9B11-665422214CCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{780B999A-9E94-41E9-9B11-665422214CCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{780B999A-9E94-41E9-9B11-665422214CCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{780B999A-9E94-41E9-9B11-665422214CCE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
