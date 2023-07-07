@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensibility", "Extensibil
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqToAmazon", "LinqToAmazon\LinqToAmazon.csproj", "{E1C731EF-073B-430D-9E6D-1847239AF723}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "expressiontree01", "expressiontree01\expressiontree01.csproj", "{54ED8266-F83C-4CF0-9D17-0DA93534EEB3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{E1C731EF-073B-430D-9E6D-1847239AF723}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1C731EF-073B-430D-9E6D-1847239AF723}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1C731EF-073B-430D-9E6D-1847239AF723}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54ED8266-F83C-4CF0-9D17-0DA93534EEB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54ED8266-F83C-4CF0-9D17-0DA93534EEB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54ED8266-F83C-4CF0-9D17-0DA93534EEB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54ED8266-F83C-4CF0-9D17-0DA93534EEB3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
