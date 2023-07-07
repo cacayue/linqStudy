@@ -2,14 +2,24 @@
 
 using System.Linq.Expressions;
 
-LoopExpression loop = Expression.Loop(
-    Expression.Call(null,
-        typeof(Console).GetMethod("WriteLine", new Type[]{ typeof(string) })!, 
-        Expression.Constant(("Hello")))
+LabelTarget labelBreak = Expression.Label();
+ParameterExpression loopIndex = Expression.Parameter(typeof(int), "index");
+
+BlockExpression block = Expression.Block(
+    new[] { loopIndex },
+    Expression.Assign(loopIndex, Expression.Constant(1)),
+    Expression.Loop(
+        Expression.IfThenElse(
+            Expression.LessThanOrEqual(loopIndex, Expression.Constant(3)),
+            Expression.Block(
+                Expression.Call(null,
+                    typeof(Console).GetMethod("WriteLine", new Type[] { typeof(string) })!,
+                    Expression.Constant("Hellp")),
+                Expression.PostIncrementAssign(loopIndex)),
+            Expression.Break(labelBreak)), 
+        labelBreak
+    )
 );
-    
-BlockExpression block = Expression.Block(loop);
 
 Expression<Action> lambdaExpression = Expression.Lambda<Action>(block);
-
 lambdaExpression.Compile().Invoke();
